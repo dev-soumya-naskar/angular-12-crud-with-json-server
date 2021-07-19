@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
-## StudentManagement 
+## Full Video Tutorial 
 See full tutorial on [Student Management CRUD with JSON Server](https://www.youtube.com/playlist?list=PLQcBFrxTul9IQFF7fJz7jgdRYJz1OCbll)
 
 ## Development server
