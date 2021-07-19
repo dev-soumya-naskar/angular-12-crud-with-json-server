@@ -14,13 +14,19 @@ export class AddStudentComponent implements OnInit {
     name: new FormControl( '' ),
     email: new FormControl( '' ),
   } );
+  message: boolean=false;
   ngOnInit(): void {
   }
   SaveData() {
     //console.log( this.addStudent.value );
     this.student.saveStudentData( this.addStudent.value ).subscribe( ( result ) => {
-      console.log( result );
+      //console.log( result );
+      this.message=true;
+      this.addStudent.reset( {} );
     } );
+  }
+  removeMessage() {
+    this.message=false;
   }
 
 
