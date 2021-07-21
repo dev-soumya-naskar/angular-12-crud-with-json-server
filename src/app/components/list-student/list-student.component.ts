@@ -16,5 +16,11 @@ export class ListStudentComponent implements OnInit {
       this.studentData=allData;
     } );
   }
+  deleteStudent( student_id: any ) {
+    this.student.deleteStudent( student_id ).subscribe( ( result ) => {
+      //console.log( result );
+      this.ngOnInit();
+    } );
+  }
 
 }

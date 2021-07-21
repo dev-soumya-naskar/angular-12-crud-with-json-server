@@ -5,6 +5,7 @@
             <th scope="col">#</th>
             <th scope="col">Name</th>
             <th scope="col">Email</th>
+            <th scope="col">Action</th>
         </tr>
     </thead>
     <tbody>
@@ -12,6 +13,7 @@
             <th scope="row">{{item.id}}</th>
             <td>{{item.name}}</td>
             <td>{{item.email}}</td>
+            <td><span (click)="deleteStudent(item.id)">Delete</span></td>
         </tr>
     </tbody>
 </table>
